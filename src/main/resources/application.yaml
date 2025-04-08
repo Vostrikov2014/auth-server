@@ -1,6 +1,12 @@
 server:
-  port: 9000
+  port: 8080
 
 spring:
   application:
     name: auth-server
+
+  thymeleaf:
+    enabled: true
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false # Для разработки
